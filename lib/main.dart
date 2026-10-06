@@ -3,8 +3,10 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/config/env_config.dart';
+import 'core/network/connectivity_service.dart';
 import 'core/network/dio_client.dart';
 import 'core/route/app_router.dart';
+import 'core/widgets/no_network_screen.dart';
 import 'data/repositories/image_repository.dart';
 import 'data/services/api_service.dart';
 import 'data/services/download_service.dart';
@@ -28,16 +30,14 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
+        ChangeNotifierProvider(create: (_) => ConnectivityService()),
         Provider<ImageRepository>.value(value: imageRepository),
-
         ChangeNotifierProvider(
           create: (_) => GalleryViewModel(imageRepository),
         ),
-
         ChangeNotifierProvider(
           create: (_) => FavoritesViewModel(imageRepository),
         ),
-
         ChangeNotifierProvider(
           create: (_) => DetailViewModel(DownloadService()),
         ),
@@ -60,6 +60,28 @@ class InfiniteGalleryApp extends StatelessWidget {
       ),
       routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
+      builder: (context, child) => ConnectivityWrapper(child: child!),
+    );
+  }
+}
+
+class ConnectivityWrapper extends StatelessWidget {
+  final Widget child;
+
+  const ConnectivityWrapper({super.key, required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    final isOnline = context.watch<ConnectivityService>().isOnline;
+
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 400),
+      child: isOnline
+          ? KeyedSubtree(key: const ValueKey('online'), child: child)
+          : const KeyedSubtree(
+              key: ValueKey('offline'),
+              child: NoNetworkScreen(),
+            ),
     );
   }
 }

@@ -80,6 +80,18 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "connectivity_plus",
+      "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/connectivity_plus-6.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "connectivity_plus_platform_interface",
+      "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/crypto-3.0.7",
       "packageUri": "lib/",
@@ -90,6 +102,12 @@
       "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.9",
       "packageUri": "lib/",
       "languageVersion": "3.9"
+    },
+    {
+      "name": "dbus",
+      "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/dbus-0.7.15",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "dio",
@@ -296,6 +314,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nm",
+      "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/nm-0.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "objective_c",
       "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/objective_c-9.6.2",
       "packageUri": "lib/",
@@ -390,6 +414,12 @@
       "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.2",
       "packageUri": "lib/",
       "languageVersion": "3.6"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/petitparser-7.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.13"
     },
     {
       "name": "platform",
@@ -594,6 +624,12 @@
       "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/xdg_directories-1.1.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
+    },
+    {
+      "name": "xml",
+      "rootUri": "file:///Users/haris/.pub-cache/hosted/pub.dev/xml-7.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.13"
     },
     {
       "name": "yaml",

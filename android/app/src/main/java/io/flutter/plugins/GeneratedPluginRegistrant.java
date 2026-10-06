@@ -16,6 +16,11 @@ public final class GeneratedPluginRegistrant {
   private static final String TAG = "GeneratedPluginRegistrant";
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     try {
+      flutterEngine.getPlugins().add(new dev.fluttercommunity.plus.connectivity.ConnectivityPlugin());
+    } catch (Exception e) {
+      Log.e(TAG, "Error registering plugin connectivity_plus, dev.fluttercommunity.plus.connectivity.ConnectivityPlugin", e);
+    }
+    try {
       flutterEngine.getPlugins().add(new dev.knottx.flutter_image_gallery_saver.FlutterImageGallerySaverPlugin());
     } catch (Exception e) {
       Log.e(TAG, "Error registering plugin flutter_image_gallery_saver, dev.knottx.flutter_image_gallery_saver.FlutterImageGallerySaverPlugin", e);
