@@ -33,3 +33,5 @@ With the above package updated static app icon with mine.
 
 ## Network handler
 We also handle no-internet stage
+
+## Used cached images for minimal network load
