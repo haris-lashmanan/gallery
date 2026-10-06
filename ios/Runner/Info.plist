@@ -10,7 +10,7 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 
 	<key>CFBundleDisplayName</key>
-	<string>Gallery</string>
+	<string>My Gallery</string>
 
 	<!-- Photo Library Permissions -->
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -29,7 +29,7 @@
 	<string>6.0</string>
 
 	<key>CFBundleName</key>
-	<string>gallery</string>
+	<string>My Gallery</string>
 
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>

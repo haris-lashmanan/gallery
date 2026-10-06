@@ -57,7 +57,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Infinite Gallery'),
+        title: const Text('My Gallery'),
         actions: [
           IconButton(
             icon: const Icon(Icons.favorite),
