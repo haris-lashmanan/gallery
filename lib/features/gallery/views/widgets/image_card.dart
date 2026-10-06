@@ -21,6 +21,7 @@ class ImageCard extends StatelessWidget {
             imageUrl: image.previewUrl,
             fit: BoxFit.cover,
             placeholder: (context, url) => Container(
+              height: 88,
               color: Colors.grey.shade200,
               child: const Center(
                 child: CircularProgressIndicator(strokeWidth: 2),
